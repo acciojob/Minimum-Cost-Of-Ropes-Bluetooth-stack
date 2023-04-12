@@ -1,8 +1,8 @@
 function calculateMinCost() {
   //your code here
-	let form = document.getElementById("#form");
-	let ropes = document.getElementById("#rope-lengths").value;
-	let result = document.getElementById("#result");
+	let form = document.getElementById("form");
+	let ropes = document.getElementById("rope-lengths").value;
+	let result = document.getElementById("result");
 	let ropeLen = ropes.split(',');
 	ropeLen.sort((a,b)=>{return a-b});
 	// console.log(ropes, ropeLen);
@@ -20,6 +20,5 @@ function calculateMinCost() {
 		all.sort((a,b)=>{return a-b});
 	}
 	// console.log(res);
-	result.innerText = res;
-	
+	result.innerText = res;	
 }  
